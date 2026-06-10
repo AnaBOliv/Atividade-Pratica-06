@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button
+        id="temaBtn"
+        aria-label="Alternar tema">
+        🌙
+    </button>
+
+    <main class="container">
+
+        <h1>📍 Consulta de CEP</h1>
+
+        <form id="cepForm">
+
+            <label for="cep">
+                Digite o CEP
+            </label>
+
+            <input
+                type="text"
+                id="cep"
+                maxlength="9"
+                placeholder="00000-000">
+
+            <small id="erroCep"></small>
+
+            <button type="submit">
+                Buscar
+            </button>
+
+        </form>
+
+        <section
+            id="resultado"
+            aria-live="polite">
+
+            <p>
+                Informe um CEP para consultar.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
