@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    background:#EFD9B4;
+    color:#16333A;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    transition:.3s;
+}
+
+body.dark{
+
+    background:#16333A;
+    color:#F4E6D0;
+}
+
+.container{
+
+    width:100%;
+    max-width:500px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+body.dark .container{
+
+    background:#234A52;
+}
+
+h1{
+
+    text-align:center;
+
+    color:#007C91;
+
+    margin-bottom:25px;
+}
+
+body.dark h1{
+
+    color:#7BD3E2;
+}
+
+form{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:12px;
+}
+
+label{
+
+    font-weight:600;
+}
+
+input{
+
+    padding:12px;
+
+    border:2px solid #007C91;
+
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+body.dark input{
+
+    background:#315F68;
+    color:white;
+    border:none;
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#005A69;
+}
+
+button{
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    background:#007C91;
+
+    color:white;
+}
+
+button:hover{
+
+    opacity:.9;
+}
+
+#temaBtn{
+
+    position:fixed;
+
+    top:15px;
+    left:15px;
+
+    width:55px;
+
+    z-index:100;
+}
+
+body.dark #temaBtn{
+
+    background:#7BD3E2;
+    color:#16333A;
+}
+
+#erroCep{
+
+    color:#D62828;
+
+    min-height:18px;
+}
+
+#resultado{
+
+    margin-top:25px;
+
+    background:#F8F3EA;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    border-left:5px solid #007C91;
+}
+
+body.dark #resultado{
+
+    background:#315F68;
+}
+
+.info{
+
+    margin-bottom:10px;
+}
+
+.info strong{
+
+    color:#007C91;
+}
+
+body.dark .info strong{
+
+    color:#7BD3E2;
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        padding:20px;
+    }
+
+    h1{
+
+        font-size:1.7rem;
+    }
+}
